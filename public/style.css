@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #000000, #764ba2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ ul {
 }
 
 li {
-    background: #f4f4f4;
+    background: #bd0606;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
