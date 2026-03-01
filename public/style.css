@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgb(78, 76, 76);
     padding: 30px;
     width: 400px;
     border-radius: 15px;
@@ -65,7 +65,7 @@ ul {
 }
 
 li {
-    background: #787878;
+    background: #8d8383;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
