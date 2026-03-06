@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Pull Latest Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Kausar-shaikh0816/Todo_app_CICD_Pipeline.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Start Application') {
+            steps {
+                sh '''
+                pm2 stop app || true
+                pm2 start app.js
+                '''
+            }
+        }
+
+    }
+}
